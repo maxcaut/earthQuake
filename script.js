@@ -72,21 +72,21 @@ STRA_EHE.addEventListener('click', function(){
 });
 
 
-//loadPagina();
+loadPagina();
 
-//setTimeout(renderPagina, 4000);
+setTimeout(renderPagina, 4000);
 
 
 //FUNZIONI
 
-//function loadPagina(){
- // main.className='loading';
- // header.style.display='none';
+function loadPagina(){
+  main.className='loading';
+  header.style.display='none';
 };
 
-//function renderPagina(){
-// main.className='screen';
-// header.style.display='block';
+function renderPagina(){
+ main.className='screen';
+ header.style.display='block';
  
 };
 
