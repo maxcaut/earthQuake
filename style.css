@@ -41,7 +41,7 @@ header{
 }
 
 .button-selects{
-    border: #4E342E 2px solid;
+    border: #4E342E 1px solid;
     border-radius: 9px;
     padding-top : 9px;
     margin-bottom: 18px;
@@ -60,7 +60,7 @@ header{
 }
 
 .feed-item{
-    border: 2px solid #4E342E;
+    border: 1px solid #4E342E;
     border-radius: 9px;
     margin-bottom: 9px;
     padding: 9px;
