@@ -49,6 +49,11 @@ header{
     flex-wrap: wrap;
     gap: 8px;
 }
+
+button{
+    width: 70px;
+}
+
 .feed-item h3 {
     text-align: center;
     margin-bottom: 9px;
