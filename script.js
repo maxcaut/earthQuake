@@ -122,6 +122,50 @@ fetch(apiUrl)
   });
 
 
+//MAPPA TERREMOTI
+
+// Inizializza la mappa centrata su Napoli con zoom 11
+    const map = L.map('map').setView([40.8518, 14.2681], 11);
+
+    // Aggiunge il layer di base OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Scarica terremoti recenti dal feed USGS
+    fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson')
+      .then(res => res.json())
+      .then(data => {
+        // Filtra solo i terremoti vicino a Napoli (approssimazione: 38.5°N–43°N, 11°E–16°E)
+        const terremotiLocali = data.features.filter(f => {
+          const [lon, lat] = f.geometry.coordinates;
+          return lat >= 38.5 && lat <= 43 && lon >= 11 && lon <= 16;
+        });
+
+        // Aggiungi cerchi alla mappa per ogni terremoto filtrato
+        terremotiLocali.forEach(f => {
+          const [lon, lat] = f.geometry.coordinates;
+          const magnitudo = f.properties.mag;
+          const luogo = f.properties.place;
+          const orario = new Date(f.properties.time).toLocaleString();
+
+          L.circleMarker([lat, lon], {
+            radius: magnitudo * 2.5,
+            fillColor: "#e53935",
+            color: "#b71c1c",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.7
+          }).addTo(map).bindPopup(
+            `<strong>${luogo}</strong><br>Magnitudo: ${magnitudo}<br>${orario}`
+          );
+        });
+      });
+
+
+
+
 
 
 
