@@ -45,7 +45,9 @@ header{
     border-radius: 9px;
     padding-top : 9px;
     margin-bottom: 18px;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 .feed-item h3 {
     text-align: center;
