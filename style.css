@@ -41,7 +41,7 @@ header{
 }
 
 .button-selects{
-    border: #2a96ad 1px solid;
+    border: #217a8b 1px solid;
     border-radius: 9px;
     padding : 4.5px;
     margin-bottom: 18px;
@@ -71,7 +71,7 @@ button{
 }
 
 .feed-item{
-    border: 1px solid #4E342E;
+    border: 1px solid #217a8b;
     border-radius: 9px;
     margin-bottom: 9px;
     padding: 9px;
