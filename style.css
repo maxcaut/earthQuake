@@ -43,7 +43,7 @@ header{
 .button-selects{
     border: #4E342E 1px solid;
     border-radius: 9px;
-    padding : 9px;
+    padding : 4.5px;
     margin-bottom: 18px;
     display: flex;
     flex-wrap: wrap;
