@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <title>EarthQuake</title>
 </head>
 <body>
@@ -41,7 +46,7 @@
                     <h3>!! Ultimi eventi registrati !!</h3>
 
                     <div id="rss-feed"></div> 
-                    <iframe src="https://earthquakes.volcanodiscovery.com/map/Italy?lat=40.8518&lng=14.2681&zoom=8&embed=1&hideVolcanoes=1"></iframe>
+                    <div id="map"></div>
                     <div class="autore"> Powered By Marco</div>
                 </div>
 
