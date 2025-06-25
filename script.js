@@ -72,9 +72,10 @@ STRA_EHE.addEventListener('click', function(){
 });
 
 
-loadPagina();
+//loadPagina();
+renderPagina();
 
-setTimeout(renderPagina, 4000);
+//setTimeout(renderPagina, 4000);
 
 
 //FUNZIONI
