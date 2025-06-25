@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>EarthQuake</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="img/logo.png" alt="Logo App Con testo">
+        </header>
+
+        <main class="loading">
+            
+                <div class="screen-page">
+                    <h3>Stazioni di Rilevazione</h3>
+                    <div class="button-selects">
+                        <button class="primary-button" id="OVO_HHZ">OVO HHZ</button>
+                        <button class="primary-button" id="VBKE_HHZ">VBKE HHZ</button>
+                        <button class="primary-button" id="VBKS_HHZ">VBKS HHZ</button>
+                        <button class="primary-button" id="CSTH_EHZ">CSTH EHZ</button>
+                        <button class="primary-button" id="CSOB_HHZ">CSOB HHZ</button>
+                        <button class="primary-button" id="CBAC_HHZ">CBAC HHZ</button>
+                        <button class="primary-button" id="CFMN_HHZ">CFMN HHZ</button>
+                        <button class="primary-button" id="IOCA_HHZ">IOCA HHZ</button>
+                        <button class="primary-button" id="SGG_EHZ">SGG EHZ</button>
+                        <button class="primary-button" id="SORR_HHZ">SORR HHZ</button>
+                        <button class="primary-button" id="STR1_EHE">STR1 EHE</button>
+                        <button class="primary-button" id="STRA_EHE">STRA EHE</button>
+                        
+                        
+                    </div>
+                    <div class="video">
+                        <h3>🟡LIVE: Campi Flegrei monitor terremoti</h3>
+                        <iframe id="video-live" width="400" height="250" src="https://www.youtube.com/embed/GS5i5mMddHc?autoplay=1" ></iframe>
+                    </div>
+
+                    <h3>!! Ultimi eventi registrati !!</h3>
+
+                    <div id="rss-feed"></div> 
+                    <div class="autore"> Powered By Marco</div>
+                </div>
+
+                <div class="loading-page">
+                    <div class="spazio"></div>
+                    <img id="logo-loading" src="img/logo.png" alt="">
+                </div>
+
+
+            
+        </main>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
