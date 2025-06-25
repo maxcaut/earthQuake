@@ -124,8 +124,8 @@ fetch(apiUrl)
 
 //MAPPA TERREMOTI
 
-// Inizializza la mappa centrata su Napoli con zoom 11
-const map = L.map('map').setView([40.8518, 14.2681], 11);
+// Inizializza la mappa centrata su pozzuoli con zoom 9
+const map = L.map('map').setView([40.8299, 14.1212], 9);
 
 // Aggiunge il layer di base OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
