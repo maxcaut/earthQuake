@@ -53,9 +53,7 @@ header{
     
 }
 
-button{
-    width: 120px;
-}
+
 
 .feed-item h3 {
     text-align: center;
@@ -83,8 +81,9 @@ button{
     margin-bottom: 9px;
     border-radius: 27px;
     border: #4E342E 1px solid;
-    background-color:#35bcda;
+    background-color:#217a8b;
     color: #fff;
+    width: 120px;
 
 }
 
